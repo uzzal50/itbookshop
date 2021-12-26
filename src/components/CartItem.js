@@ -10,7 +10,7 @@ const CartItem = ({ id, image, title, price }) => {
     <Wrapper>
       <div className='cart-item-container'>
         <Link to={`/book/${id}`}>
-          <Image src={image}></Image>
+          <Image src={image} className='w-100'></Image>
         </Link>
         <h6>{title}</h6>
         <h6>{price}</h6>
@@ -35,7 +35,7 @@ const Wrapper = styled.article`
 
       align-items: center;
       img {
-        width: 120px;
+        width: 135px !important;
       }
     }
   }
