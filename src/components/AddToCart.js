@@ -11,8 +11,15 @@ const AddToCart = ({ book }) => {
 
   return (
     <AddToContainer>
-      <Link to='/cart' onClick={() => addToCart(bookId, image, title, price)}>
-        <Button variant='outline' className='btn btn-sm my-4'>
+      <Link
+        to='/cart'
+        className='d-flex'
+        onClick={() => addToCart(bookId, image, title, price)}
+      >
+        <Button
+          variant='outline'
+          className='btn btn-sm my-4 d-flex flex-grow-1 justify-content-center'
+        >
           Buy
         </Button>
       </Link>
@@ -22,14 +29,19 @@ const AddToCart = ({ book }) => {
 
 const AddToContainer = styled.main`
   .btn {
-    width: 300px;
-    border: 1px solid #ced4da;
-    font-size: 18px;
+    display: block;
+    margin: auto;
   }
+  @media (min-width: 600px) {
+    .btn {
+      border: 1px solid #ced4da;
+      font-size: 18px;
+    }
 
-  .btn:hover {
-    background: #9c00dd;
-    color: #fff !important;
+    .btn:hover {
+      background: #9c00dd;
+      color: #fff !important;
+    }
   }
 `
 

@@ -31,8 +31,8 @@ const SingleBookPage = () => {
         <h4>Book Details</h4>
       </div>
       <Row>
-        <Col md={4}>
-          <Image src={book.image}></Image>
+        <Col md={3}>
+          <Image src={book.image} className='w-100'></Image>
 
           <Row>
             <Col md={12}>
@@ -40,7 +40,7 @@ const SingleBookPage = () => {
             </Col>
           </Row>
         </Col>
-        <Col md={8}>
+        <Col md={9}>
           <Table striped>
             <tbody>
               <tr>
