@@ -38,7 +38,7 @@ const CartPage = () => {
 }
 
 const Wrapper = styled.section`
-   {
+  @media (min-width: 600px) {
     .content {
       display: grid;
       grid-template-columns: 210px 2fr 1fr 100px;

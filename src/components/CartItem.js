@@ -24,13 +24,15 @@ const CartItem = ({ id, image, title, price }) => {
 }
 
 const Wrapper = styled.article`
-  .cart-item-container {
-    display: grid;
-    grid-template-columns: 210px 2fr 1fr auto;
+  @media (min-width: 600px) {
+    .cart-item-container {
+      display: grid;
+      grid-template-columns: 210px 2fr 1fr auto;
 
-    align-items: center;
-    img {
-      width: 120px;
+      align-items: center;
+      img {
+        width: 120px;
+      }
     }
   }
 `

@@ -16,7 +16,9 @@ const Navbar = () => {
           <Link to='/' className='logo'>
             ITBook<span style={{ color: '#9c00dd' }}>Shop</span>{' '}
           </Link>
+
           <SearchForm />
+
           <Link
             to='/cart'
             className='d-flex justify-content-end align-items-center logo'
@@ -35,18 +37,20 @@ const Navbar = () => {
 
 const Wrapper = styled.nav`
    {
-    // background: #9c00dd;
-    nav {
-      display: grid;
-      grid-template-columns: 1fr 2fr 1fr;
-      padding: 25px 0;
-      .logo {
-        text-decoration: none;
-        color: #000000ff;
-        font-size: 1.75rem;
-        font-weight: 600;
+    @media (min-width: 600px) {
+      nav {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        padding: 25px 0;
       }
     }
+    .logo {
+      text-decoration: none;
+      color: #000000ff;
+      font-size: 1.75rem;
+      font-weight: 600;
+    }
+
     .cart-container {
       display: flex;
       align-items: center;

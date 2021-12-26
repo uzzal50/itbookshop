@@ -16,9 +16,11 @@ const CartTotal = () => {
 }
 
 const Wrapper = styled.main`
-   {
-    display: grid;
-    grid-template-columns: 210px 2fr 1fr 100px;
+  @media (min-width: 600px) {
+     {
+      display: grid;
+      grid-template-columns: 210px 2fr 1fr 100px;
+    }
   }
 `
 export default CartTotal
