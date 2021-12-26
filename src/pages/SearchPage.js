@@ -10,12 +10,11 @@ import Loading from '../components/Loading'
 const SearchPage = () => {
   const { query } = useParams()
   const [book, setBooks] = useState([])
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   const [pageCount, setPageCount] = useState(0)
   const [totalResults, setTotalResults] = useState(0)
 
   const getSearchBooks = async () => {
-    setLoading(true)
     const { data } = await axios.get(
       `https://api.itbook.store/1.0/search/${query}?page=1}`
     )

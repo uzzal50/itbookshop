@@ -5,7 +5,7 @@ const Loading = ({ title }) => {
   return (
     <Wrapper>
       <div className='title text-center'>
-        <h3>{title}...</h3>
+        <h4>{title}...</h4>
       </div>
     </Wrapper>
   )

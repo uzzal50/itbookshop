@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { FaShoppingCart } from 'react-icons/fa'
 import { useCartContext } from '../context/cartContext'
 import { Container } from 'react-bootstrap'
@@ -21,7 +21,7 @@ const Navbar = () => {
 
           <Link
             to='/cart'
-            className='d-flex justify-content-end align-items-center logo'
+            className='d-flex justify-content-end align-items-center logo cart'
           >
             Cart
             <span className='cart-container'>
@@ -36,18 +36,31 @@ const Navbar = () => {
 }
 
 const Wrapper = styled.nav`
+  nav {
+    padding: 15px 0;
+    .cart {
+      position: absolute;
+      top: 15px;
+      right: 22px;
+    }
+  }
    {
     @media (min-width: 600px) {
       nav {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         padding: 25px 0;
+        .cart {
+          position: relative;
+          top: 0;
+          right: 0;
+        }
       }
     }
     .logo {
       text-decoration: none;
       color: #000000ff;
-      font-size: 1.75rem;
+      font-size: 1.4rem;
       font-weight: 600;
     }
 

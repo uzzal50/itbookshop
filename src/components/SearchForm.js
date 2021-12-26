@@ -13,7 +13,7 @@ const SearchForm = () => {
         <FormControl
           type='search'
           placeholder='Search Books By Name'
-          className='me-2'
+          className='me-2 form-control-sm mt-md-0 mt-2'
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
@@ -22,6 +22,7 @@ const SearchForm = () => {
           variant='outline'
           disabled={searchText === ''}
           onClick={() => searchHandler(searchText)}
+          className='btn-sm mt-md-0 mt-2'
         >
           {' '}
           <Link to='/search' className='text-decoration-none'>

@@ -12,17 +12,14 @@ h6,
 span {
   color: #000000ff;
 }
-
-/* a {
-  color: #ffffffff !important;
-} */
-section {
-  margin: 35px 0 !important;
-}
 .title {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
-.title h3 {
+section {
+  margin: 15px 0 25px 0 !important;
+}
+
+.title h4 {
   color: #9c00dd;
 }
 .btn {
@@ -46,4 +43,25 @@ section {
 }
 .page-link {
   color: #9c00dd;
+}
+
+.cart-wrapper h6 {
+  text-align: center;
+}
+
+.del-btn {
+  display: block;
+  margin: auto;
+}
+
+@media (min-width: 600px) {
+  section {
+    margin: 35px 0 !important;
+  }
+  .title {
+    margin-bottom: 30px;
+  }
+  .cart-wrapper h6 {
+    text-align: left;
+  }
 }

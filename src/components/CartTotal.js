@@ -4,22 +4,28 @@ import { useCartContext } from '../context/cartContext'
 
 const CartTotal = () => {
   const { total_amount } = useCartContext()
-  console.log(total_amount)
+
   return (
     <Wrapper>
       {' '}
       <span></span>
-      <h5>Total Amount</h5>
-      <h5>${total_amount}</h5>
+      <h6>Total Amount</h6>
+      <h6>${total_amount}</h6>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.main`
+  h6 {
+    text-align: center;
+  }
   @media (min-width: 600px) {
      {
       display: grid;
       grid-template-columns: 210px 2fr 1fr 100px;
+    }
+    h6 {
+      text-align: left;
     }
   }
 `

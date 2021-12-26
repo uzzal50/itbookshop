@@ -5,10 +5,10 @@ import BookList from './BookList'
 
 const BooksContent = ({ books, title }) => {
   return (
-    <>
+    <Wrapper>
       {' '}
       <div className='title'>
-        <h3>{title}</h3>
+        <h4>{title}</h4>
       </div>
       <div className='content'>
         <Row>
@@ -17,7 +17,7 @@ const BooksContent = ({ books, title }) => {
           })}
         </Row>
       </div>
-    </>
+    </Wrapper>
   )
 }
 

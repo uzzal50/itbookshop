@@ -28,7 +28,7 @@ const SingleBookPage = () => {
   return (
     <Wrapper>
       <div className='title'>
-        <h3>Book Details</h3>
+        <h4>Book Details</h4>
       </div>
       <Row>
         <Col md={4}>

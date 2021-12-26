@@ -12,9 +12,13 @@ const CartItem = ({ id, image, title, price }) => {
         <Link to={`/book/${id}`}>
           <Image src={image}></Image>
         </Link>
-        <h4>{title}</h4>
-        <h5>{price}</h5>
-        <Button onClick={() => removeFromCart(id)} variant='outline'>
+        <h6>{title}</h6>
+        <h6>{price}</h6>
+        <Button
+          onClick={() => removeFromCart(id)}
+          variant='outline'
+          className='btn-sm del-btn'
+        >
           {' '}
           Remove
         </Button>

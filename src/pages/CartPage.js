@@ -18,14 +18,14 @@ const CartPage = () => {
   }
 
   return (
-    <Wrapper>
+    <Wrapper className='cart-wrapper'>
       <div className='title'>
-        <h3>Cart</h3>
+        <h4>Cart</h4>
       </div>
       <div className='content'>
         <span></span>
-        <h4>Title</h4>
-        <h5>Price</h5>
+        <h6>Title</h6>
+        <h6>Price</h6>
       </div>
       <hr className='line' />
       {cart.map((item, index) => {
@@ -38,6 +38,9 @@ const CartPage = () => {
 }
 
 const Wrapper = styled.section`
+  .content {
+    display: none;
+  }
   @media (min-width: 600px) {
     .content {
       display: grid;

@@ -12,7 +12,7 @@ const AddToCart = ({ book }) => {
   return (
     <AddToContainer>
       <Link to='/cart' onClick={() => addToCart(bookId, image, title, price)}>
-        <Button variant='outline' className='btn'>
+        <Button variant='outline' className='btn btn-sm my-4'>
           Buy
         </Button>
       </Link>

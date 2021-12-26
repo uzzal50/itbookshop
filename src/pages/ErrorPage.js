@@ -1,11 +1,18 @@
 import React from 'react'
+import styled from 'styled-components'
 
-const ErrorPage = () => {
+const Loading = () => {
   return (
-    <div>
-      <h3>error</h3>
-    </div>
+    <Wrapper>
+      <div className='title text-center'>
+        <h4>There is no Page</h4>
+      </div>
+    </Wrapper>
   )
 }
 
-export default ErrorPage
+const Wrapper = styled.section`
+   {
+  }
+`
+export default Loading
